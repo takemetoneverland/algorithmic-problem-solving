@@ -5,10 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int A = scanner.nextInt();
-        int B = scanner.nextInt();
+        long A = scanner.nextLong();
+        long B = scanner.nextLong();
 
-        int result = (A + B) * (A - B);
+        long result = (A + B) * (A - B);
 
         System.out.println(result);
     }
