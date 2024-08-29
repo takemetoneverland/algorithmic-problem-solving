@@ -3,20 +3,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String inputStr = scanner.nextLine();
-        String result = "";
-
-        for (int i = 0; i < inputStr.length(); i++) {
-            char ch = inputStr.charAt(i);
-
-            if (Character.isUpperCase(ch)) {
-                result += Character.toLowerCase(ch);
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        for (int i = 0; i <str.length(); i++) {
+            char ch = str.charAt(i);
+            if ('A' <= ch && ch <= 'Z') {
+                System.out.print((char)('a' + ch - 'A'));
             } else {
-                result += Character.toUpperCase(ch);
+                System.out.print((char)('A' + ch - 'a'));
             }
         }
-
-        System.out.println(result);
     }
 }
