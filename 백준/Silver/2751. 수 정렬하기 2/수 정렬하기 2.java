@@ -16,7 +16,8 @@ public class Main {
         Arrays.sort(numList);
         
         for (int num : numList) {
-            System.out.println(num);
+            bw.write(num + "\n");
         }
+        bw.flush();
     }
 }
